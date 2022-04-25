@@ -1,0 +1,112 @@
+<!--the following code is only designed for full-sized window-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AceOfHeart</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 97.5vh;
+            display: flex; /*for the circular thing*/
+            justify-content: center;
+            align-items: center;
+        }
+        .mainbox{
+            background-color: red;
+            color: red;
+            height: 90%;
+            width: 40%;
+            border-radius: 50%;
+            display: flex; /*for an actual ace inside the circle*/
+            justify-content: center;
+            align-items: center;
+        }
+        .ace{
+            background-color: white;
+            height: 75%;
+            width: 50%;
+            border-radius: 12px;
+            position: relative;
+                }
+        .text{
+            position: absolute; 
+            /* border: 1px solid green; */
+        }
+        #A1{
+            font-size: 70px;
+            top: 5px;
+            left: 10px;
+        }
+        #h1{
+            font-size: 60px;
+            top: 55px;
+            left: 16px;
+        }
+        #h2{
+            font-size: 130px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } 
+        #h3{
+            font-size: 60px;
+            bottom: 55px;
+            right: 16px;
+            transform: rotate(180deg);
+        }
+        #A2{
+            font-size: 70px;
+            bottom: 5px;
+            right: 10px;
+            transform: rotate(180deg);
+        }
+        #s1{
+            font-size: 60px;
+            top: 55px;
+            left: 16px;
+        }
+        #s2{
+            font-size: 130px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #s3{
+            font-size: 60px;
+            bottom: 55px;
+            right: 16px;
+            transform: rotate(180deg);
+        }
+        #s1, #s2, #s3{
+            display: none;
+        }
+        .mainbox:hover{
+            background-color: black;
+            color: black;
+            cursor: pointer;
+        }
+        .mainbox:hover #h1, .mainbox:hover #h2, .mainbox:hover #h3{
+            display:none;
+        }
+        .mainbox:hover #s1, .mainbox:hover #s2, .mainbox:hover #s3{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="ace">
+            <div class="text" id="A1">A</div>
+            <div class="text" id="h1">♥</div>
+            <div class="text" id="s1">♠</div>
+            <div class="text" id="h2">♥</div>
+            <div class="text" id="s2">♠</div>
+            <div class="text" id="h3">♥</div>
+            <div class="text" id="s3">♠</div>
+            <div class="text" id="A2">A</div>
+        </div>
+    </div>
+</body>
+</html>
