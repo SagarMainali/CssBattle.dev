@@ -1,0 +1,128 @@
+<!-----------------------------------------------------------------------
+                              Target # 42 - Baby                       
+------------------------------------------------------------------------->
+
+<div>
+    <span></span>
+    <span class="b"></span>
+    <span></span>
+</div>
+<style>
+    body {
+        background: #293462;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background: #FE5F55;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100px 100px 50px 50px;
+        overflow: hidden;
+    }
+
+    span {
+        display: block;
+        background: #FFF1C1;
+    }
+
+    span:nth-of-type(1) {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-top: -50px;
+        box-shadow: 100px 0 #FFF1C1;
+    }
+
+    span:nth-of-type(2) {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin: 40px 0 0 20px;
+        box-shadow: 100px 0 #FFF1C1;
+    }
+
+    span:nth-of-type(3) {
+        height: 10px;
+        width: 40px;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 43 - Wrench                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #6592CF;
+        margin: 0;
+    }
+
+    div {
+        height: 300px;
+        width: 110px;
+        background: #6592CF;
+        margin-left: 145px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    div::before {
+        content: '';
+        height: 182px;
+        width: 100px;
+        border: 30px solid #243D83;
+        position: absolute;
+        top: 30px;
+        left: -90px;
+        border-radius: 70px;
+        -webkit-box-reflect: right -30px;
+        /*for chrome*/
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 44 - Stripes                       
+------------------------------------------------------------------------->
+
+<div class="yellow"></div>
+<div class="sc"></div>
+<style>
+    body {
+        background: #1A4341;
+    }
+
+    .yellow {
+        width: 100px;
+        height: 20px;
+        background: #F3AC3C;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 20px #1A4341,
+            0 0 0 40px #F3AC3C,
+            0 0 0 60px #1A4341,
+            0 0 0 80px #F3AC3C;
+    }
+
+    .sc {
+        position: absolute;
+        height: 250px;
+        width: 50%;
+        background: #1A4341;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        box-shadow: 300px 0 #1A4341;
+    }
+</style>
+
+<!------------------------------------------------------------------------->
