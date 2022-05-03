@@ -1,0 +1,97 @@
+<!-----------------------------------------------------------------------
+                              Target # 45 - Magical Tree                       
+------------------------------------------------------------------------->
+
+<div class="big">
+    <div class="inner"></div>
+</div>
+<div class="outer"></div>
+<style>
+    body {
+        background: #1A4341;
+        margin: 0;
+    }
+
+    .big {
+        margin: auto;
+        width: 210px;
+        height: 180px;
+        background: transparent;
+        border: 30px solid #F3AC3C;
+        border-top: 0;
+    }
+
+    .big::before {
+        content: '';
+        height: 300px;
+        width: 30px;
+        background: #F3AC3C;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .inner {
+        margin: auto;
+        height: 120px;
+        width: 90px;
+        border: 30px solid #998235;
+        border-top: 0;
+    }
+
+    .outer {
+        margin: 30px auto;
+        height: 30px;
+        width: 270px;
+        background: #998235;
+        z-index: -1;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                              Target # 46 - Mountains                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #293462;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #FFF1C1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    div::before,
+    div::after {
+        content: '';
+        position: absolute;
+        background: #FE5F55;
+        transform: rotate(45deg);
+    }
+
+    div::before {
+        height: 150px;
+        width: 150px;
+        top: 45%;
+        left: 33%;
+    }
+
+    div::after {
+        height: 100px;
+        width: 100px;
+        top: 75%;
+        right: 60%;
+    }
+</style>
+
+<!------------------------------------------------------------------------->
