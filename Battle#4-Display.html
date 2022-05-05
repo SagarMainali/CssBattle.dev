@@ -1,0 +1,346 @@
+<!-----------------------------------------------------------------------
+                          Target # 21 - Sitepoint Logo                      
+------------------------------------------------------------------------->
+
+<div class="upper"></div>
+<div class="lower"></div>
+<style>
+    body {
+        background: #222;
+    }
+
+    div {
+        box-sizing: border-box;
+        width: 100px;
+        height: 80px;
+        border-style: solid;
+        border-width: 30px 0 0 30px;
+        position: absolute;
+        border-radius: 10px 0 0 0;
+    }
+
+    .upper {
+        border-color: #F2994A;
+        transform: rotate(-45deg);
+        top: 85px;
+        left: 138px;
+    }
+
+    .lower {
+        border-color: #2D9CDB;
+        transform: rotate(135deg);
+        bottom: 85px;
+        right: 139px;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 22 - Cloud                      
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #F5D6B4;
+    }
+
+    div {
+        width: 180px;
+        height: 50px;
+        background: #D86F45;
+        position: fixed;
+        bottom: 85px;
+        left: 210px;
+        transform: translate(-50%);
+        border-radius: 100px;
+    }
+
+    div::before,
+    div::after {
+        content: '';
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background: #D86F45;
+        border-radius: 50%;
+    }
+
+    div::before {
+        top: -100%;
+        left: -20px;
+    }
+
+    div::after {
+        top: -160%;
+        left: 60px;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 23 - Boxception                    
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #F3AC3C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #1A4341;
+        border-width: 100px 100px 0 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    div::before {
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        bottom: 50px;
+        height: 100px;
+        width: 100px;
+        border-style: solid;
+        border-color: #998235;
+        border-width: 50px 0 0 50px;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 24 - Switches                   
+------------------------------------------------------------------------->
+
+<div class="left"></div>
+<div class="right"></div>
+<style>
+    body {
+        background: #62306D;
+    }
+
+    div {
+        width: 100px;
+        height: 150px;
+        border-radius: 100px;
+        position: absolute;
+    }
+
+    .left {
+        background: #AA445F;
+        top: 50px;
+        left: 80px;
+    }
+
+    .left::after,
+    .right::after {
+        content: '';
+        background: #F7EC7D;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .left::after {
+        top: 50px;
+    }
+
+    .right {
+        background: #E38F66;
+        bottom: 50px;
+        right: 80px;
+    }
+</style>
+
+
+<!-----------------------------------------------------------------------
+                            Target # 25 - Blossom                   
+------------------------------------------------------------------------->
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<style>
+    body {
+        background: #998235;
+    }
+
+    div {
+        position: absolute;
+    }
+
+    div:nth-child(1),
+    div:nth-child(2) {
+        width: 80px;
+        height: 100px;
+        background: #1A4341;
+    }
+
+    div:nth-child(1) {
+        top: 60px;
+        left: 110px;
+        border-radius: 0 50px 0;
+    }
+
+    div:nth-child(2) {
+        bottom: 60px;
+        right: 110px;
+        border-radius: 50px 0 50px;
+    }
+
+    div:nth-child(3),
+    div:nth-child(4) {
+        width: 80px;
+        height: 60px;
+        background: #F3AC3C;
+    }
+
+    div:nth-child(3) {
+        border-radius: 0 50px 0;
+        bottom: 60px;
+        left: 110px;
+    }
+
+    div:nth-child(4) {
+        border-radius: 50px 0 50px;
+        top: 60px;
+        right: 110px;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 26 - Smiley                    
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #6592CF;
+    }
+
+    div {
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        border: 20px solid #060F55;
+        border-top: 0;
+        border-radius: 0 0 80px 80px;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    div::after,
+    div::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 40px;
+        border: 20px solid #060F55;
+        border-bottom: 0;
+    }
+
+    div::after {
+        bottom: 140px;
+        border-radius: 80px 80px 0 0;
+        right: 100%;
+    }
+
+    div::before {
+        bottom: 140px;
+        border-radius: 80px 80px 0 0;
+        left: 100%;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 27 - Lock Up                   
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #E38F66;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background: #AA445F;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    div::before {
+        box-sizing: border-box;
+        content: '';
+        height: 140px;
+        width: 140px;
+        position: absolute;
+        border: 30px solid #F7EC7D;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        top: 30px;
+        left: 30px;
+        transform: rotate(-45deg);
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                             Target # 28 - Cups and Balls                  
+------------------------------------------------------------------------->
+
+<div class="circle"></div>
+<div class="not-circle"></div>
+<style>
+    body {
+        background: #1A4341;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #998235;
+        position: absolute;
+        top: 90px;
+        left: 70px;
+        box-shadow: 70px 70px #998235,
+            140px 70px #F3AC3C,
+            210px 0 #F3AC3C;
+    }
+
+    .not-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 0 0 50% 50%;
+        background: #F3AC3C;
+        position: absolute;
+        bottom: 90px;
+        left: 70px;
+        box-shadow: 210px 0 #998235;
+    }
+
+    .not-circle::after {
+        content: '';
+        width: 50px;
+        height: 50px;
+        border-radius: 50% 50% 0 0;
+        background: #F3AC3C;
+        position: absolute;
+        bottom: 70px;
+        left: 70px;
+        box-shadow: 70px 0 #998235;
+    }
+</style>
+
+<!------------------------------------------------------------------------>
