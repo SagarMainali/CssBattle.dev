@@ -1,0 +1,370 @@
+<!-----------------------------------------------------------------------
+                              Target # 33 - Birdie                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #1A4341;
+    }
+
+    div {
+        width: 75px;
+        height: 150px;
+        background: #998235;
+        border-radius: 75px 0 0 75px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 125px;
+    }
+
+    div::before {
+        content: '';
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #0B2429;
+        top: 30px;
+        left: 30px;
+    }
+
+    div::after {
+        content: '';
+        position: absolute;
+        height: 0;
+        width: 0;
+        border: 100px solid #F3AC3C;
+        border-radius: 50%;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        transform: rotate(45deg);
+        top: -25px;
+        left: -25px;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 34 - Christmas Tree                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #007065;
+    }
+
+    div {
+        border-style: solid;
+        border-color: #FFEECF transparent;
+        border-width: 0 125px 100px 125px;
+        position: absolute;
+        top: 50px;
+        left: 75px;
+    }
+
+    div::before,
+    div::after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 0 125px 100px 125px;
+    }
+
+    div::before {
+        border-color: #F5C181 transparent;
+        top: 50px;
+        left: -125px;
+        z-index: -1;
+    }
+
+    div::after {
+        border-color: #00A79D transparent;
+        top: 100px;
+        left: -125px;
+        z-index: -2;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                              Target # 35 - Ice Cream                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #293462;
+    }
+
+    div {
+        width: 100px;
+        height: 150px;
+        background: #FFF1C1;
+        border-radius: 50px 50px 20px 20px;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    div::before {
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 30px;
+        background: linear-gradient(#A64942 10px, #FE5F55 10px);
+        border-radius: 0 0 10px 10px;
+        top: 100%;
+        left: 35px;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 36 - Interleaved                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #1A4341;
+    }
+
+    div {
+        width: 50px;
+        height: 200px;
+        background: #F3AC3C;
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        border-radius: 50px 50px 0 0;
+        box-shadow: 150px 0 #F3AC3C, 300px 0 #F3AC3C;
+    }
+
+    div::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 200px;
+        background: #998235;
+        bottom: 100;
+        left: 75px;
+        border-radius: 0 0 50px 50px;
+        box-shadow: 150px 0 #998235;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                              Target # 37 - Tunnel                      
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #6592CF;
+    }
+
+    div {
+        width: 250px;
+        height: 250px;
+        background: #243D83;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    div::before,
+    div::after {
+        content: '';
+        position: absolute;
+    }
+
+    div::before {
+        height: 150px;
+        width: 150px;
+        background: #6592CF;
+        top: 50px;
+        left: 50px;
+        transform: rotate(15deg);
+    }
+
+    div::after {
+        height: 75px;
+        width: 75px;
+        background: #243D83;
+        top: 88px;
+        left: 88px;
+        transform: rotate(30deg);
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                            Target # 38 - Not Simply Square                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #293462;
+        margin: 0;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background: #FFF1C1;
+        position: relative;
+    }
+
+    div::after {
+        height: 150px;
+        width: 100px;
+        content: '';
+        position: absolute;
+        background: #FE5F55;
+        left: 100%;
+        box-shadow: 0 50px #A64942;
+    }
+
+    div::before {
+        height: 100px;
+        width: 150px;
+        content: '';
+        position: absolute;
+        background: #FE5F55;
+        top: 100%;
+        box-shadow: 50px 0 #A64942;
+    }
+</style>
+
+
+<!-----------------------------------------------------------------------
+                              Target # 39 - Sunset                      
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #1A4341;
+    }
+
+    div {
+        width: 250px;
+        height: 250px;
+        content: '';
+        position: absolute;
+        background: #1A4341;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    div::before,
+    div::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    div::before {
+        width: 200px;
+        height: 200px;
+        background: #998235;
+        border-radius: 50%;
+    }
+
+    div::after {
+        width: 250px;
+        height: 20px;
+        background: #F3AC3C;
+        box-shadow: 0 0 0 20px #1A4341, 0 0 0 40px #F3AC3C, 0 0 0 60px #1A4341;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                              Target # 40 - Letter B                       
+------------------------------------------------------------------------->
+
+<div></div>
+<div></div>
+<style>
+    body {
+        background: #6592CF;
+    }
+
+    div:nth-of-type(1) {
+        width: 100px;
+        height: 100px;
+        background: #6592CF;
+        border: 50px solid #243D83;
+        border-radius: 50%;
+        border-top-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    div:nth-of-type(2) {
+        height: 100px;
+        width: 50px;
+        background: #243D83;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }
+</style>
+
+<!-----------------------------------------------------------------------
+                              Target # 41 - Fox Head                       
+------------------------------------------------------------------------->
+
+<div></div>
+<style>
+    body {
+        background: #293462;
+    }
+
+    div {
+        width: 50px;
+        height: 140px;
+        background: #FE5F55;
+        position: absolute;
+        top: 50%;
+        left: 150px;
+        transform: translateY(-50%);
+        border-radius: 0 40px 0 0;
+        -webkit-box-reflect: right;
+    }
+
+    div::before,
+    div::after {
+        content: '';
+        position: absolute;
+    }
+
+    div::before {
+        height: 50px;
+        width: 50px;
+        background: #293462;
+        bottom: -10;
+        border-radius: 0 40px 0 0;
+    }
+
+    div::after {
+        height: 30px;
+        width: 30px;
+        background: #293462;
+        border-radius: 50%;
+        top: 60px;
+        left: 15px;
+    }
+</style>
+
+<!----------------------------------------------------------------------->
